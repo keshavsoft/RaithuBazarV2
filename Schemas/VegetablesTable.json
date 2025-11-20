@@ -1,0 +1,28 @@
+{
+    "tableName": "VegetablesTable",
+    "columns": [
+        {
+            "field": "VegetableName",
+            "title": "VegetableName",
+            "unique": true,
+            "type": "text",
+            "isInput": true,
+            "isAutoFocus": true
+        },
+        {
+            "field": "VegetableRate",
+            "title": "VegetableRate"
+        }
+    ],
+    "data": [],
+    "Vertical": [],
+    "DataTableOptions": {
+        "Header": {
+            "autoFocus": "title"
+        }
+    },
+    "SubRoutes": [
+        "Read",
+        "Insert"
+    ]
+}

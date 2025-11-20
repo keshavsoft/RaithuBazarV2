@@ -1,0 +1,7 @@
+POST http://localhost:3000/V1/VegetablesTable/Insert/AsIsAndTS
+Content-Type: application/json
+
+{
+  "VegetableName": "",
+  "VegetableRate": ""
+}

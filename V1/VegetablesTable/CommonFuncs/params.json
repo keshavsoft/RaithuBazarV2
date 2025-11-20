@@ -1,0 +1,1 @@
+{"TableName":"VegetablesTable","DataPath":"Data","Columns":["VegetableName","VegetableRate"],"ColumnsWithSchema":[{"field":"VegetableName","title":"VegetableName","unique":true,"type":"text","isInput":true,"isAutoFocus":true},{"field":"VegetableRate","title":"VegetableRate"}]}

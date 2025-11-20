@@ -1,0 +1,4 @@
+POST http://localhost:3000/V1/VegetablesTable/Read/SelColumns
+Content-Type: application/json
+
+[ "exampleKey"]
