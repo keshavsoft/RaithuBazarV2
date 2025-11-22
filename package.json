@@ -1,6 +1,6 @@
 {
-  "name": "OnlyBackEndNonSecured",
-  "version": "1.0.0",
+  "name": "RaithuBazarV2",
+  "version": "1.0.1",
   "description": "",
   "main": "app.js",
   "type": "module",

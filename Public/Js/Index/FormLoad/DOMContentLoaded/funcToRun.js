@@ -1,3 +1,168 @@
+const jFLocalSingleImageNoWt = ({ inItemName, inRate, inImageId }) => {
+    if ("content" in document.createElement("template")) {
+        const tbody = document.querySelector("#RowContainerId");
+        const template = document.querySelector("#TemplateForImageAndSingleNoWt");
+
+        const clone = template.content.cloneNode(true);
+        const ImageId = inImageId;
+
+        const jVarLocalItemName = inItemName;
+
+        let td = clone.querySelector(".ImageClass");
+        td.innerHTML = `<img width="150" height="150" src="Images/${ImageId}.jpg" alt="${jVarLocalItemName}">`;
+
+        const jVarLocalItemNameFind = clone.querySelector(".ItemNameClass");
+        jVarLocalItemNameFind.innerHTML = jVarLocalItemName;
+
+        const jVarLocalItemRateFind = clone.querySelector(".RateClass");
+        jVarLocalItemRateFind.innerHTML = inRate;
+
+        tbody.appendChild(clone);
+    } else {
+        // Find another way to add the rows to the table because
+        // the HTML template element is not supported.
+    };
+};
+
+const jFLocalSingleRate = ({ inItemName, inRate, inImageId }) => {
+    if ("content" in document.createElement("template")) {
+        const tbody = document.querySelector("#RowContainerId");
+        const template = document.querySelector("#TemplateForImageAndSingleColumn");
+
+        const clone = template.content.cloneNode(true);
+        const ImageId = inImageId;
+
+        const jVarLocalItemName = inItemName;
+
+        let td = clone.querySelector(".ImageClass");
+        td.innerHTML = `<img width="150" height="150" src="Images/${ImageId}.jpg" alt="${jVarLocalItemName}">`;
+
+        const jVarLocalItemNameFind = clone.querySelector(".ItemNameClass");
+        jVarLocalItemNameFind.innerHTML = jVarLocalItemName;
+
+        const jVarLocalItemRateFind = clone.querySelector(".RateClass");
+        jVarLocalItemRateFind.innerHTML = inRate;
+
+        tbody.appendChild(clone);
+    } else {
+        // Find another way to add the rows to the table because
+        // the HTML template element is not supported.
+    };
+};
+
+const jFLocalForImageTagAnd2Cols9_3NoWt = ({ inRate1, inRate2, inImageId, inItemName, inItemName1, inItemName2 }) => {
+    if ("content" in document.createElement("template")) {
+        const tbody = document.querySelector("#RowContainerId");
+        const template = document.querySelector("#TemplateForImageAnd2Cols9_3IdNoWt");
+
+        const clone = template.content.cloneNode(true);
+        const ImageId = inImageId;
+        const jVarLocalItemName = inItemName;
+
+        let td = clone.querySelector(".ImageClass");
+        td.innerHTML = `<img width="150" height="150" src="Images/${ImageId}.jpg" alt="${jVarLocalItemName}">`;
+
+        const jVarLocalItemNameFind = clone.querySelector(".ItemNameClass");
+        jVarLocalItemNameFind.innerHTML = jVarLocalItemName;
+
+        jFLocalForLine1({
+            inClone: clone, inItemName: inItemName1,
+            inItemRate: inRate1
+        });
+
+        jFLocalForLine2({
+            inClone: clone, inItemName: inItemName2,
+            inItemRate: inRate2
+        });
+
+        tbody.appendChild(clone);
+    } else {
+        // Find another way to add the rows to the table because
+        // the HTML template element is not supported.
+    };
+};
+
+const jFLocalForNoImage2Items = ({ inItemName, inRate1, inRate2, inItemName1, inItemName2 }) => {
+    if ("content" in document.createElement("template")) {
+        const tbody = document.querySelector("#RowContainerId");
+        const template = document.querySelector("#TemplateForNoImage2Items");
+
+        const clone = template.content.cloneNode(true);
+        const ImageId = "okra";
+
+        const jVarLocalItemName = inItemName;
+
+        const jVarLocalItemNameFind = clone.querySelector(".ItemNameClass");
+        jVarLocalItemNameFind.innerHTML = jVarLocalItemName;
+
+        jFLocalForLine1({
+            inClone: clone, inItemName: inItemName1,
+            inItemRate: inRate1
+        });
+
+        jFLocalForLine2({
+            inClone: clone, inItemName: inItemName2,
+            inItemRate: inRate2
+        });
+
+        tbody.appendChild(clone);
+    } else {
+        // Find another way to add the rows to the table because
+        // the HTML template element is not supported.
+    };
+};
+
+const jFLocalForSingleWithImage = ({ inRate }) => {
+    if ("content" in document.createElement("template")) {
+        const tbody = document.querySelector("#RowContainerId");
+        const template = document.querySelector("#TemplateForImageAndSingleColumn");
+
+        const clone = template.content.cloneNode(true);
+        const ImageId = "okra";
+
+        const jVarLocalItemName = "బెండకాయ";
+
+        let td = clone.querySelector(".ImageClass");
+        td.innerHTML = `<img width="150" height="150" src="Images/${ImageId}.jpg" alt="${jVarLocalItemName}">`;
+
+        const jVarLocalItemNameFind = clone.querySelector(".ItemNameClass");
+        jVarLocalItemNameFind.innerHTML = jVarLocalItemName;
+
+        const jVarLocalItemRateFind = clone.querySelector(".RateClass");
+        jVarLocalItemRateFind.innerHTML = inRate;
+
+        tbody.appendChild(clone);
+    } else {
+        // Find another way to add the rows to the table because
+        // the HTML template element is not supported.
+    };
+};
+
+const jFLocalForNoImageSingleItem = ({ inItemName, inRate }) => {
+    if ("content" in document.createElement("template")) {
+        const tbody = document.querySelector("#RowContainerId");
+        const template = document.querySelector("#TemplateForNoImageSingleItem");
+
+        const clone = template.content.cloneNode(true);
+        const ImageId = "okra";
+
+        const jVarLocalItemName = inItemName;
+
+        const jVarLocalItemNameFind = clone.querySelector(".ItemNameClass");
+        jVarLocalItemNameFind.innerHTML = jVarLocalItemName;
+
+        if (inRate !== undefined) {
+            const jVarLocalItemRateFind = clone.querySelector(".RateClass");
+            jVarLocalItemRateFind.innerHTML = inRate;
+        };
+
+        tbody.appendChild(clone);
+    } else {
+        // Find another way to add the rows to the table because
+        // the HTML template element is not supported.
+    };
+};
+
 const jFLocalForImageTagAnd2ColsSmallName = ({ inRate1, inRate2, inImageId, inItemName, inItemName1, inItemName2 }) => {
     if ("content" in document.createElement("template")) {
         const tbody = document.querySelector("#RowContainerId");
@@ -37,11 +202,10 @@ const jFLocalForImageTagAnd2ColsSmallName = ({ inRate1, inRate2, inImageId, inIt
     };
 };
 
-
-const jFLocalForImageTagAnd2Cols = ({ inRate1, inRate2, inImageId, inItemName, inItemName1, inItemName2 }) => {
+const jFLocalForImageTagAnd2ColsSmallName4_8 = ({ inRate1, inRate2, inImageId, inItemName, inItemName1, inItemName2 }) => {
     if ("content" in document.createElement("template")) {
         const tbody = document.querySelector("#RowContainerId");
-        const template = document.querySelector("#TemplateForImageAnd2ColsId");
+        const template = document.querySelector("#TemplateForImageAnd2ColsSmallName4_8Id");
 
         const clone = template.content.cloneNode(true);
         const ImageId = inImageId;
@@ -77,7 +241,7 @@ const jFLocalForImageTagAnd2Cols = ({ inRate1, inRate2, inImageId, inItemName, i
     };
 };
 
-const jFLocalForSvgAnd2Cols = ({ inRate1, inRate2, inImageId, inItemName, inItemName1, inItemName2 }) => {
+const jFLocalForImageTagAnd2Cols = ({ inRate1, inRate2, inImageId, inItemName, inItemName1, inItemName2 }) => {
     if ("content" in document.createElement("template")) {
         const tbody = document.querySelector("#RowContainerId");
         const template = document.querySelector("#TemplateForImageAnd2ColsId");
@@ -87,12 +251,71 @@ const jFLocalForSvgAnd2Cols = ({ inRate1, inRate2, inImageId, inItemName, inItem
         const jVarLocalItemName = inItemName;
 
         let td = clone.querySelector(".ImageClass");
-        // td.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg"
-        //                 xmlns:xlink="http://www.w3.org/1999/xlink" width="150" height="150">
-        //                 <use xlink:href="#${ImageId}"></use>
-        //             </svg>`;
+        td.innerHTML = `<img width="150" height="150" src="Images/${ImageId}.svg" alt="${jVarLocalItemName}">`;
+
+        const jVarLocalItemNameFind = clone.querySelector(".ItemNameClass");
+        jVarLocalItemNameFind.innerHTML = jVarLocalItemName;
+
+        jFLocalForLine1({
+            inClone: clone, inItemName: inItemName1,
+            inItemRate: inRate1
+        });
+
+        jFLocalForLine2({
+            inClone: clone, inItemName: inItemName2,
+            inItemRate: inRate2
+        });
+
+        tbody.appendChild(clone);
+    } else {
+        // Find another way to add the rows to the table because
+        // the HTML template element is not supported.
+    };
+};
 
 
+const jFLocalForImageTagAnd2Cols9_3 = ({ inRate1, inRate2, inImageId, inItemName, inItemName1, inItemName2 }) => {
+    if ("content" in document.createElement("template")) {
+        const tbody = document.querySelector("#RowContainerId");
+        const template = document.querySelector("#TemplateForImageAnd2Cols9_3Id");
+
+        const clone = template.content.cloneNode(true);
+        const ImageId = inImageId;
+        const jVarLocalItemName = inItemName;
+
+        let td = clone.querySelector(".ImageClass");
+        td.innerHTML = `<img width="150" height="150" src="Images/${ImageId}.jpg" alt="${jVarLocalItemName}">`;
+
+        const jVarLocalItemNameFind = clone.querySelector(".ItemNameClass");
+        jVarLocalItemNameFind.innerHTML = jVarLocalItemName;
+
+        jFLocalForLine1({
+            inClone: clone, inItemName: inItemName1,
+            inItemRate: inRate1
+        });
+
+        jFLocalForLine2({
+            inClone: clone, inItemName: inItemName2,
+            inItemRate: inRate2
+        });
+
+        tbody.appendChild(clone);
+    } else {
+        // Find another way to add the rows to the table because
+        // the HTML template element is not supported.
+    };
+};
+
+const jFLocalForJpgAnd2Cols = ({ inRate1, inRate2, inImageId, inItemName, inItemName1, inItemName2 }) => {
+    if ("content" in document.createElement("template")) {
+        const tbody = document.querySelector("#RowContainerId");
+        const template = document.querySelector("#TemplateForImageAnd2ColsId");
+
+        const clone = template.content.cloneNode(true);
+        const ImageId = inImageId;
+        const jVarLocalItemName = inItemName;
+
+        let td = clone.querySelector(".ImageClass");
 
         td.innerHTML = `<img width="150" height="150" src="Images/${ImageId}.jpg" alt="${jVarLocalItemName}">`;
 
@@ -129,7 +352,7 @@ const StartFunc = () => {
         inRate4: 70
     });
 
-    jFLocalForOkra({ inRate: 60 });
+    jFLocalForSingleWithImage({ inRate: 60 });
 
     // jFLocalSingleRate({
     //     inItemName: "పచ్చి మిర్చి",
@@ -179,8 +402,8 @@ const StartFunc = () => {
         inImageId: "carrot"
     });
 
-    
-    jFLocalForSvgAnd2Cols({
+
+    jFLocalForJpgAnd2Cols({
         inItemName: "దొండకాయ",
         inItemName1: "లోకల్",
         inItemName2: "నాన్ లోకల్",
@@ -188,7 +411,7 @@ const StartFunc = () => {
         inImageId: "ivyGourd"
     });
 
-    jFLocalForImageTagAnd2ColsSmallName({
+    jFLocalForImageTagAnd2ColsSmallName4_8({
         inItemName: "బంగాళాదుంపలు",
         inItemName1: "లోకల్",
         inItemName2: "నాన్ లోకల్",
@@ -196,6 +419,44 @@ const StartFunc = () => {
         inImageId: "potato"
     });
 
+    jFLocalForImageTagAnd2Cols9_3({
+        inItemName: "ఉల్లిపాయలు",
+        inItemName1: "గ్రేడ్ 1",
+        inItemName2: "చిన్నవి",
+        inRate1: 45, inRate2: 38,
+        inImageId: "onion"
+    });
+
+    jFLocalForNoImageSingleItem({
+        inItemName: "గోరు చిక్కుళ్ళు"
+    });
+
+    jFLocalForNoImageSingleItem({
+        inItemName: "దోస కాయలు",
+        inRate: 38
+    });
+
+
+    jFLocalForNoImage2Items({
+        inItemName: "ఆనపకాయ 1",
+        inRate1: 40,
+        inRate2: 35, inItemName1: "పెద్ద",
+        inItemName2: "చిన్న"
+    });
+
+    jFLocalForImageTagAnd2Cols9_3NoWt({
+        inItemName: "పొట్లకాయ 1",
+        inRate1: 25,
+        inRate2: 30, inItemName1: "పెద్ద",
+        inItemName2: "చిన్న",
+        inImageId: "snakeGourd"
+    });
+
+    jFLocalSingleImageNoWt({
+        inItemName: "ఆరతి కాయ ఒకటి",
+        inRate: "6 - 8",
+        inImageId: "greenBanana"
+    });
 
 };
 
