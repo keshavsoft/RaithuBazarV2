@@ -1,7 +1,6 @@
-import { StartFunc as StartFuncFromRefreshId } from './RefreshId/EntryFile.js';
+import { StartFunc as StartFuncFromRefreshId } from './RefreshId/entryFile.js';
 
 const StartFunc = () => {
-
 	StartFuncFromRefreshId();
 };
 
