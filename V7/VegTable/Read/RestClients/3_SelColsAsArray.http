@@ -1,0 +1,4 @@
+POST http://localhost:9017/V7/VegTable/Read/SelColsAsArray
+Content-Type: application/json
+
+[ "exampleKey"]

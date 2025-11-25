@@ -1,7 +1,0 @@
-POST http://localhost:3000/V1/VegetablesTable/Insert/AsIs
-Content-Type: application/json
-
-{
-  "VegetableName": "",
-  "VegetableRate": ""
-}

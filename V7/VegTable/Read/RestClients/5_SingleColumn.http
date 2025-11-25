@@ -1,0 +1,1 @@
+GET http://localhost:9017/V7/VegTable/Read/SingleColumn/{Column name}

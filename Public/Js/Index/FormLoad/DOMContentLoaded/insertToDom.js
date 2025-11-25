@@ -163,6 +163,31 @@ const jFLocalForNoImageSingleItem = ({ inItemName, inRate }) => {
     };
 };
 
+const jFLocalForNoImageSingleItemGreen = ({ inItemName, inRate }) => {
+    if ("content" in document.createElement("template")) {
+        const tbody = document.querySelector("#RowContainerId");
+        const template = document.querySelector("#TemplateForNoImageSingleItemGreen");
+
+        const clone = template.content.cloneNode(true);
+        const ImageId = "okra";
+
+        const jVarLocalItemName = inItemName;
+
+        const jVarLocalItemNameFind = clone.querySelector(".ItemNameClass");
+        jVarLocalItemNameFind.innerHTML = jVarLocalItemName;
+
+        if (inRate !== undefined) {
+            const jVarLocalItemRateFind = clone.querySelector(".RateClass");
+            jVarLocalItemRateFind.innerHTML = inRate;
+        };
+
+        tbody.appendChild(clone);
+    } else {
+        // Find another way to add the rows to the table because
+        // the HTML template element is not supported.
+    };
+};
+
 const jFLocalForImageTagAnd2ColsSmallName = ({ inRate1, inRate2, inImageId, inItemName, inItemName1, inItemName2 }) => {
     if ("content" in document.createElement("template")) {
         const tbody = document.querySelector("#RowContainerId");
@@ -549,8 +574,6 @@ const StartFunc = () => {
         inRate: "50"
     });
 
-
-
     jFLocalForNoImage2Items({
         inItemName: "బీన్స్",
         inRate1: 50,
@@ -558,8 +581,90 @@ const StartFunc = () => {
         inItemName2: "గింజలు"
     });
 
+    jFLocalForNoImage2Items({
+        inItemName: "అల్లం",
+        inRate1: 74,
+        inRate2: 74, inItemName1: "పాటది",
+        inItemName2: "కొట్టాడి"
+    });
+
+    jFLocalForNoImageSingleItem({
+        inItemName: "క్యాప్సికమ్",
+        inRate: "86"
+    });
 
 
+    jFLocalForNoImageSingleItem({
+        inItemName: "బొబ్బర్లు",
+        inRate: "60"
+    });
+
+
+    jFLocalForNoImageSingleItem({
+        inItemName: "చిలగడదుంప",
+        inRate: "38"
+    });
+
+
+    jFLocalForNoImageSingleItem({
+        inItemName: "అకరకాయలు",
+        inRate: "110"
+    });
+
+
+    jFLocalForNoImageSingleItem({
+        inItemName: "మామిడికాయలు",
+        inRate: "12-15"
+    });
+
+
+    jFLocalForNoImageSingleItem({
+        inItemName: "నిమ్మకాయలు",
+        inRate: "24-30"
+    });
+
+
+    jFLocalForNoImageSingleItem({
+        inItemName: "చింతకాయలు",
+        inRate: "35"
+    });
+
+    jFLocalForNoImageSingleItem({
+        inItemName: "సొరకాయలు",
+        inRate: "30"
+    });
+
+    jFLocalForNoImageSingleItem({
+        inItemName: "బుడిద గుమ్మడి కాయ కేజీ",
+        inRate: "30"
+    });
+    jFLocalLeafy();
+
+};
+const jFLocalLeafy = () => {
+
+    jFLocalForNoImageSingleItemGreen({
+        inItemName: "పుదీనా",
+        inRate: "110"
+    });
+
+
+    jFLocalForNoImageSingleItemGreen({
+        inItemName: "కరివేపాకు",
+        inRate: "55"
+    });
+
+
+    jFLocalForNoImageSingleItemGreen({
+        inItemName: "చింత చిగురు",
+        inRate: "50"
+    });
+
+
+    jFLocalForNoImageSingleItemGreen({
+        inItemName: "ముల్లంగి",
+        inRate: "60"
+    });
 };
 
 export { StartFunc };

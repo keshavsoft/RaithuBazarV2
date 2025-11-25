@@ -1,0 +1,11 @@
+POST http://localhost:9017/V7/VegTable/Insert/AsIsAndTS
+Content-Type: application/json
+
+{
+  "GroupName": "",
+  "GroupTelugu": "",
+  "VegetableName": "",
+  "VegetableImage": "",
+  "VegetableTelugu": "",
+  "VegetableRate": ""
+}

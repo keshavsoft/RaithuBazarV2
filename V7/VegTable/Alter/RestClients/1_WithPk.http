@@ -1,0 +1,11 @@
+POST http://localhost:9017/V7/VegTable/Alter/WithPk/{pk}
+Content-Type: application/json
+
+{
+  "GroupName": "",
+  "GroupTelugu": "",
+  "VegetableName": "",
+  "VegetableImage": "",
+  "VegetableTelugu": "",
+  "VegetableRate": ""
+}

@@ -1,7 +1,0 @@
-POST http://localhost:3000/V1/VegetablesTable/Insert/AsIsNoPk
-Content-Type: application/json
-
-{
-  "VegetableName": "",
-  "VegetableRate": ""
-}
