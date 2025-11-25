@@ -66,3 +66,7 @@ Ensure Node.js version is v22.22 or above
 ### 1.6.1
 
 - back end started
+
+### 1.6.2
+
+- UI V1 started
