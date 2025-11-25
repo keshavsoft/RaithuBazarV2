@@ -1,0 +1,11 @@
+POST http://localhost:9017/V8/VegTable/Insert/ColumnExist
+Content-Type: application/json
+
+{
+  "GroupName": "",
+  "GroupTelugu": "",
+  "VegetableName": "",
+  "VegetableImage": "",
+  "VegetableTelugu": "",
+  "VegetableRate": ""
+}

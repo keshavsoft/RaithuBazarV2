@@ -50,6 +50,7 @@
     "SubRoutes": [
         "Read",
         "Insert",
-        "Alter"
+        "Alter",
+        "GroupBy"
     ]
 }

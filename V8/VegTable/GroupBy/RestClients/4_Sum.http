@@ -1,0 +1,13 @@
+POST http://localhost:9017/V8/VegTable/GroupBy/Sum
+Content-Type: application/json
+
+[
+	{
+  "GroupName": "",
+  "GroupTelugu": "",
+  "VegetableName": "",
+  "VegetableImage": "",
+  "VegetableTelugu": "",
+  "VegetableRate": ""
+}
+]
