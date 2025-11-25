@@ -339,6 +339,72 @@ const jFLocalForJpgAnd2Cols = ({ inRate1, inRate2, inImageId, inItemName, inItem
     };
 };
 
+const jFLocalForImage4 = ({ inRate1, inRate2, inRate3, inRate4, inItemName, inItemName1, inItemName2, inItemName3, inItemName4, inImageId }) => {
+    if ("content" in document.createElement("template")) {
+        const tbody = document.querySelector("#RowContainerId");
+        const template = document.querySelector("#TemplateForImageAnd4ItemsId");
+
+        const clone = template.content.cloneNode(true);
+        const ImageId = inImageId;
+
+        let td = clone.querySelector(".ImageClass");
+        td.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" width="140" height="140">
+                                <use xlink:href="#${ImageId}"></use>
+                            </svg>`;
+
+        const jVarLocalItemName = inItemName;
+        const jVarLocalItemNameFind = clone.querySelector(".ItemNameClass");
+        jVarLocalItemNameFind.innerHTML = jVarLocalItemName;
+
+        jFLocalForLine1({
+            inClone: clone, inItemName: inItemName1,
+            inItemRate: inRate1
+        });
+
+        jFLocalForLine2({
+            inClone: clone, inItemName: inItemName2,
+            inItemRate: inRate2
+        });
+
+        jFLocalForLine3({
+            inClone: clone, inItemName: inItemName3,
+            inItemRate: inRate3
+        });
+
+        jFLocalForLine4({
+            inClone: clone, inItemName: inItemName4,
+            inItemRate: inRate4
+        });
+
+        tbody.appendChild(clone);
+    } else {
+        // Find another way to add the rows to the table because
+        // the HTML template element is not supported.
+    };
+};
+
+const jFLocalForTomato = ({ inRate1, inRate2, inRate3, inRate4 }) => {
+    jFLocalForImage4({
+        inRate1, inRate2, inRate3, inRate4, inItemName: "టమోటా",
+        inItemName1: "దేశవాళీ పెద్దవి",
+        inItemName2: "దేశవాళీ చిన్నవి",
+        inItemName3: "హైబ్రిడ్ పెద్దవి",
+        inItemName4: "హైబ్రిడ్ చిన్నవి",
+        inImageId: "TomatoId"
+    });
+};
+
+const jFLocalForBrinjal = ({ inRate1, inRate2, inRate3, inRate4 }) => {
+    jFLocalForImage4({
+        inRate1, inRate2, inRate3, inRate4, inItemName: "వంకాయ",
+        inItemName1: "నలుపు (నీటి)",
+        inItemName2: "గులాబీ (మువ్వ)",
+        inItemName3: "తెలుపు (మెట్ట)",
+        inItemName4: "దొమ్మరు",
+        inImageId: "BrinjalId"
+    });
+};
 
 const StartFunc = () => {
     jFLocalForTomato({
@@ -457,6 +523,42 @@ const StartFunc = () => {
         inRate: "6 - 8",
         inImageId: "greenBanana"
     });
+
+    jFLocalForNoImageSingleItem({
+        inItemName: "చామదుంపలు",
+        inRate: "30-34"
+    });
+
+    jFLocalForNoImageSingleItem({
+        inItemName: "మునగ కాయలు",
+        inRate: "12-13"
+    });
+
+    jFLocalForNoImageSingleItem({
+        inItemName: "కంద",
+        inRate: "60"
+    });
+
+    jFLocalForNoImageSingleItem({
+        inItemName: "బీట్రూట్",
+        inRate: "50"
+    });
+
+    jFLocalForNoImageSingleItem({
+        inItemName: "కీరదోస",
+        inRate: "50"
+    });
+
+
+
+    jFLocalForNoImage2Items({
+        inItemName: "బీన్స్",
+        inRate1: 50,
+        inRate2: 270, inItemName1: "కాయలు",
+        inItemName2: "గింజలు"
+    });
+
+
 
 };
 

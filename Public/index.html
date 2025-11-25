@@ -7,13 +7,13 @@
     <meta name="description" content="" />
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors" />
     <meta name="generator" content="Astro v5.13.2" />
-    <title>Features · Bootstrap v5.3</title>
+    <title>KeshavSoft</title>
     <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/features/" />
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 
-    <meta name="theme-color" content="#712cf9" />
+    <meta name="theme-color" content="#060507ff" />
     <link href="features.css" rel="stylesheet" />
 
     <style>
@@ -387,7 +387,7 @@
         </symbol>
 
 
-        <symbol id="TomatoId" viewBox="470 650 700 50">
+        <symbol id="TomatoId" viewBox="470 650 650 30">
             <path fill-rule="evenodd" fill="rgb(81.639099%, 20.800781%, 8.59375%)" fill-opacity="1"
                 d="M 634.039062 399.050781 C 573.527344 421.050781 525.394531 462.308594 508.890625 498.070312 C 461.648438 600.429688 489.136719 707.199219 535.019531 771.738281 C 616.160156 885.890625 740.285156 907.878906 871.957031 887.261719 C 1049.128906 859.53125 1159.378906 668.601562 1067.238281 481.558594 C 1017.21875 380.039062 828.015625 328.511719 634.039062 399.050781 " />
             <path fill-rule="evenodd" fill="rgb(88.28125%, 41.992188%, 20.800781%)" fill-opacity="1"
@@ -1320,6 +1320,79 @@
         </div>
     </template>
 
+
+    <template id="TemplateForImageAnd4ItemsId">
+        <div class="col-lg-6">
+            <div class="card">
+
+                <div class="card-body">
+
+                    <div class="row">
+                        <div class="col-5">
+                            <div class="ImageClass"></div>
+                            <a href="#" id="PlayButtonId">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor"
+                                    class="bi bi-play" viewBox="0 0 16 16">
+                                    <path
+                                        d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z" />
+                                </svg></a>
+                        </div>
+                        <div class="col-7">
+
+                            <div class="row">
+                                <div class="col-8">
+                                    <h3 class="fs-2 text-body-emphasis ItemNameClass"></h3>
+                                </div>
+                                <div class="col-4">
+                                    <h6>కిలో ₹</h6>
+                                </div>
+                            </div>
+
+                            <div class="row Line1Class">
+                                <div class="col-9">
+                                    <h6 class="NameClass"></h6>
+                                </div>
+                                <div class="col-3">
+                                    <h5> <b class="RateClass">--</b></h5>
+                                </div>
+                            </div>
+
+                            <div class="row Line2Class">
+                                <div class="col-9">
+                                    <h6 class="NameClass"></h6>
+                                </div>
+                                <div class="col-3">
+                                    <h5> <b class="RateClass">--</b></h5>
+                                </div>
+                            </div>
+
+                            <div class="row Line3Class">
+                                <div class="col-9">
+                                    <h6 class="NameClass"></h6>
+                                </div>
+                                <div class="col-3">
+                                    <h5> <b class="RateClass">--</b></h5>
+                                </div>
+                            </div>
+
+                            <div class="row Line4Class">
+                                <div class="col-9">
+                                    <h6 class="NameClass"></h6>
+                                </div>
+                                <div class="col-3">
+                                    <h5> <b class="RateClass">--</b></h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+        </div>
+    </template>
+
     <template id="TemplateForImageAnd3ColsId">
         <div class="col-lg-6">
             <div class="card">
@@ -1868,7 +1941,7 @@
                         <div class="col">
                             <h1 class="fs-1 text-body-emphasis ItemNameClass">బెండకాయ</h1>
                         </div>
-                        
+
                     </div>
 
                     <div class="row Line1Class">
@@ -1900,52 +1973,6 @@
         crossorigin="anonymous"></script>
 
     <script>
-     
-        const jFLocalForTomato = ({ inRate1, inRate2, inRate3, inRate4 }) => {
-            if ("content" in document.createElement("template")) {
-                const tbody = document.querySelector("#RowContainerId");
-                const template = document.querySelector("#TemplateForImageAnd4ColsId");
-
-                const clone = template.content.cloneNode(true);
-                const ImageId = "TomatoId";
-
-                let td = clone.querySelector(".ImageClass");
-                td.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg"
-                                xmlns:xlink="http://www.w3.org/1999/xlink" width="150" height="150">
-                                <use xlink:href="#${ImageId}"></use>
-                            </svg>`;
-
-                const jVarLocalItemName = "టమోటా";
-                const jVarLocalItemNameFind = clone.querySelector(".ItemNameClass");
-                jVarLocalItemNameFind.innerHTML = jVarLocalItemName;
-
-                jFLocalForLine1({
-                    inClone: clone, inItemName: "దేశవాళీ పెద్దవి",
-                    inItemRate: inRate1
-                });
-
-                jFLocalForLine2({
-                    inClone: clone, inItemName: "దేశవాళీ చిన్నవి",
-                    inItemRate: inRate2
-                });
-
-                jFLocalForLine3({
-                    inClone: clone, inItemName: "హైబ్రిడ్ పెద్దవి",
-                    inItemRate: inRate3
-                });
-
-                jFLocalForLine4({
-                    inClone: clone, inItemName: "హైబ్రిడ్ చిన్నవి",
-                    inItemRate: inRate4
-                });
-
-                tbody.appendChild(clone);
-            } else {
-                // Find another way to add the rows to the table because
-                // the HTML template element is not supported.
-            };
-        };
-
 
 
         const jFLocalForImageTagAnd4Cols = ({ inRate1, inRate2, inRate3, inRate4, inImageId, inItemName, inItemName1, inItemName2, inItemName3, inItemName4 }) => {
@@ -2031,52 +2058,6 @@
         };
 
 
-
-        const jFLocalForBrinjal = ({ inRate1, inRate2, inRate3, inRate4 }) => {
-            if ("content" in document.createElement("template")) {
-                const tbody = document.querySelector("#RowContainerId");
-                const template = document.querySelector("#TemplateForImageAnd4ColsId");
-
-                const clone = template.content.cloneNode(true);
-                const ImageId = "BrinjalId";
-
-                let td = clone.querySelector(".ImageClass");
-                td.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg"
-                                xmlns:xlink="http://www.w3.org/1999/xlink" width="140" height="140">
-                                <use xlink:href="#${ImageId}"></use>
-                            </svg>`;
-
-                const jVarLocalItemName = "వంకాయ";
-                const jVarLocalItemNameFind = clone.querySelector(".ItemNameClass");
-                jVarLocalItemNameFind.innerHTML = jVarLocalItemName;
-
-                jFLocalForLine1({
-                    inClone: clone, inItemName: "నలుపు (నీటి)",
-                    inItemRate: inRate1
-                });
-
-
-                jFLocalForLine2({
-                    inClone: clone, inItemName: "గులాబీ (మువ్వ)",
-                    inItemRate: inRate2
-                });
-
-                jFLocalForLine3({
-                    inClone: clone, inItemName: "తెలుపు (మెట్ట)",
-                    inItemRate: inRate3
-                });
-
-                jFLocalForLine4({
-                    inClone: clone, inItemName: "దొమ్మరు",
-                    inItemRate: inRate4
-                });
-
-                tbody.appendChild(clone);
-            } else {
-                // Find another way to add the rows to the table because
-                // the HTML template element is not supported.
-            };
-        };
 
 
         const jFLocalForMultiRow = ({ inImageId, inItemName }) => {
