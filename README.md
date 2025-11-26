@@ -78,3 +78,7 @@ Ensure Node.js version is v22.22 or above
 ### 1.6.4
 
 - UI V3 3 veg perfect
+
+### 1.6.5
+
+- UI V3 Group name should start
