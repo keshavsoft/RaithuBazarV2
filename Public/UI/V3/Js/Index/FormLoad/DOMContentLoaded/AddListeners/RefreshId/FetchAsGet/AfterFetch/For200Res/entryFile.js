@@ -136,16 +136,25 @@ let LocalFuncFor1 = ({ value, key }) => {
 };
 
 let LocalFuncFor4 = ({ value, key }) => {
+    console.log("value, key", value, key);
+
     const jVarLocalItemName1 = value[0].VegetableTelugu;
     const jVarLocalItemName2 = value[1].VegetableTelugu;
+    const jVarLocalItemName3 = value[2].VegetableTelugu;
+    const jVarLocalItemName4 = value[3].VegetableTelugu;
     const jVarLocalRate1 = ` ₹ ${value[0].VegetableRate}`;
     const jVarLocalRate2 = ` ₹ ${value[1].VegetableRate}`;
+    const jVarLocalRate3 = ` ₹ ${value[2].VegetableRate}`;
+    const jVarLocalRate4 = ` ₹ ${value[3].VegetableRate}`;
 
     jFLocalForImageTagAnd4Cols({
         inItemName: key.split(".")[0],
         inItemName1: jVarLocalItemName1,
         inItemName2: jVarLocalItemName2,
+        inItemName3: jVarLocalItemName3,
+        inItemName4: jVarLocalItemName4,
         inRate1: jVarLocalRate1, inRate2: jVarLocalRate2,
+        inRate3: jVarLocalRate3, inRate4: jVarLocalRate4,
         inImageId: `${key.split(".")[1]}.${key.split(".")[2]}`
     });
 };
