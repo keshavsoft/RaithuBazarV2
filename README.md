@@ -86,3 +86,7 @@ Ensure Node.js version is v22.22 or above
 ### 1.6.6
 
 - UI V3 working on design
+
+### 1.6.7
+
+- TemplateForImageAnd4ColsId
