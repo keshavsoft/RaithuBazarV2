@@ -1,10 +1,12 @@
 
 let StartFunc = ({ inResponseAsJson }) => {
-    console.log("aaaaaaaaaaaa : ", inResponseAsJson);
+    // console.log("aaaaaaaaaaaa : ", inResponseAsJson);
 
     Object.entries(inResponseAsJson).forEach(([key, value]) => {
+        console.log(`-----------${key}`);
+
         console.log(`-----------${value.length}`);
-        console.log(`-----------${value.length === 2}`);
+        // console.log(`-----------${value.length === 2}`);
 
         switch (value.length) {
             case 1:
@@ -136,7 +138,7 @@ let LocalFuncFor1 = ({ value, key }) => {
 };
 
 let LocalFuncFor4 = ({ value, key }) => {
-    console.log("value, key", value, key);
+    // console.log("value, key", value, key);
 
     const jVarLocalItemName1 = value[0].VegetableTelugu;
     const jVarLocalItemName2 = value[1].VegetableTelugu;

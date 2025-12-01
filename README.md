@@ -82,3 +82,7 @@ Ensure Node.js version is v22.22 or above
 ### 1.6.5
 
 - UI V3 Group name should start
+
+### 1.6.6
+
+- UI V3 working on design
