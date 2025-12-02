@@ -1,0 +1,2 @@
+POST http://localhost:9017/V9/VegGroup/Insert/OnlyDefault
+Content-Type: application/json

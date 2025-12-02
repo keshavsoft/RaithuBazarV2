@@ -1,0 +1,10 @@
+POST http://localhost:9017/V9/VegGroup/Alter/WithPk/{pk}
+Content-Type: application/json
+
+{
+  "VegGroupName": "",
+  "VegGroupImage": "",
+  "VegGroupImageExt": "",
+  "VegGroupLeftCol": "",
+  "VegGroupRightCol": ""
+}

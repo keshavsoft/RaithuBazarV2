@@ -1,0 +1,6 @@
+POST http://localhost:9017/V9/VegTable/GroupBy/SingleColumnSum/{GroupByColumnName}
+Content-Type: application/json
+
+[
+	"SumColumnName"
+]

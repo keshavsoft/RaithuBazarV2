@@ -1,0 +1,11 @@
+POST http://localhost:9017/V9/VegTable/Insert/SchemaColumnsOnly
+Content-Type: application/json
+
+{
+  "GroupFK": "",
+  "GroupTelugu": "",
+  "VegetableName": "",
+  "VegetableImage": "",
+  "VegetableTelugu": "",
+  "VegetableRate": ""
+}

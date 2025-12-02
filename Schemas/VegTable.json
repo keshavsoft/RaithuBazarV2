@@ -4,8 +4,8 @@
         {
             "field": "GroupFK",
             "title": "GroupFK",
-            "type": "text",
-            "isInput": true
+            "type": "number",
+            "isNumber": true
         },
         {
             "field": "GroupTelugu",

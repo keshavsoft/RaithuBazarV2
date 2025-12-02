@@ -1,0 +1,10 @@
+POST http://localhost:9017/V9/VegGroup/Insert/AsIs
+Content-Type: application/json
+
+{
+  "VegGroupName": "టమోటా కిలో",
+  "VegGroupImage": "tomato2",
+  "VegGroupImageExt": "svg",
+  "VegGroupLeftCol": "5",
+  "VegGroupRightCol": "7"
+}
