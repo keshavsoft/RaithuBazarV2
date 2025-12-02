@@ -1,16 +1,16 @@
 import express from 'express';
 import cookieParser from 'cookie-parser';
 
-import dotenv from 'dotenv';
 import { router as routerFromV7 } from "./V7/routes.js";
 import { router as routerFromV8 } from "./V8/routes.js";
-dotenv.config();
 
 const app = express();
 
 var port = normalizePort(process.env.PORT || 3000);
 
+// serve static files from Public
 app.use(express.static('Public'));
+
 app.use(cookieParser());
 app.use("/V7", routerFromV7);
 app.use("/V8", routerFromV8);

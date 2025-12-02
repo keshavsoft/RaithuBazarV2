@@ -2,8 +2,8 @@
     "tableName": "VegTable",
     "columns": [
         {
-            "field": "GroupName",
-            "title": "Group Name",
+            "field": "GroupFK",
+            "title": "GroupFK",
             "type": "text",
             "isInput": true
         },

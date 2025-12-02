@@ -1,0 +1,48 @@
+{
+    "tableName": "VegGroup",
+    "columns": [
+        {
+            "field": "VegGroupName",
+            "title": "Group Name",
+            "type": "text",
+            "unique": true,
+            "isInput": true
+        },
+        {
+            "field": "VegGroupImage",
+            "title": "VegGroupImage",
+            "type": "text",
+            "isInput": true
+        },
+        {
+            "field": "VegGroupImageExt",
+            "title": "VegGroupImageExt",
+            "type": "text",
+            "isInput": true
+        },
+        {
+            "field": "VegGroupLeftCol",
+            "title": "VegGroupLeftCol",
+            "type": "text",
+            "isInput": true
+        },
+        {
+            "field": "VegGroupRightCol",
+            "title": "VegGroupRightCol",
+            "type": "text",
+            "isInput": true
+        }
+    ],
+    "data": [],
+    "Vertical": [],
+    "DataTableOptions": {
+        "Header": {
+            "autoFocus": "title"
+        }
+    },
+    "SubRoutes": [
+        "Read",
+        "Insert",
+        "Alter"
+    ]
+}

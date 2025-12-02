@@ -433,7 +433,7 @@ const jFLocalForBrinjal = ({ inRate1, inRate2, inRate3, inRate4 }) => {
 
 const StartFunc = () => {
     jFLocalForTomato({
-        inRate1: 27
+        inRate1: 30
     });
 
     jFLocalForBrinjal({
